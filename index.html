@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form name="form">
+		<div class="display">
+			<input id="result" type="text" placeholder="0" name="displayResult" />
+        </div>
+        <div class="buttons">
+            <div class="row">
+              <input type="button" name="bC" value="C" onClick="clearRes()" style="width: 100%; border-radius: 0%;">
+            </div>             
+			  <div class="row">
+				<input type="button" name="b7" value="7" onClick="inputval('7')">
+				  <input type="button" name="b8" value="8" onClick="inputval('8')">
+				  <input type="button" name="b9" value="9" onClick="inputval('9')">
+				  <input type="button" name="addb" value="+" onClick="inputval('+')">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="b4" value="4" onClick="inputval('4')">
+				  <input type="button" name="b5" value="5" onClick="inputval('5')">
+				  <input type="button" name="b6" value="6" onClick="inputval('6')">
+				  <input type="button" name="subb" value="-" onClick="inputval('-')">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="b1" value="1" onClick="inputval('1')">
+				  <input type="button" name="b2" value="2" onClick="inputval('2')">
+				  <input type="button" name="b3" value="3" onClick="inputval('3')">
+				  <input type="button" name="mulb" value="*" onClick="inputval('*')">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="b0" value="0" onClick="inputval('0')">
+				  <input type="button" name="potb" value="." onClick="inputval('.')">
+				  <input type="button" name="divb" value="/" onClick="inputval('/')">
+				  <input type="button" class="black" value="=" onClick="resultval()">
+				</div>
+			</div>
+		
+		</form>
+    </div>
+    <script src="index.js"></script>
+</body>
+	
+</html>
